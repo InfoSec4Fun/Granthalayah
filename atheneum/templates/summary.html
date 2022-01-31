@@ -1,0 +1,37 @@
+{% extends "layout.html" %} 
+{% block head %}
+<title>Return Summary</title>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ url_for( 'static' , filename = 'summary.png') }}"
+/>
+{% endblock head %} 
+
+{% block content %}
+{% block body %}
+<div style="width: 90%; margin-left: auto; margin-right: auto">
+  <table class="table" style="color: black">
+    <h3>Members Summary</h3>
+    <thead>
+      <tr>
+        <th scope="col" style="width: 6%">Member ID</th>
+        <th scope="col">Member Name</th>
+        <th scope="col" style="width: 15%">Member's Balance</th>
+        <th scope="col" style="width: 20%">Amount Paid To Library</th>
+      </tr>
+    </thead>
+    <!-- use a for loop to log every book record -->
+    <tbody>
+      <tr>
+        <th scope="row">{{member.id_}}</th>
+        <td>{{member.member_name}}</td>
+        <td>{{member.balance_amount}}</td>
+        <td>{{member.paid_for_borrowed_books}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock body %}
+{% endblock content %}
