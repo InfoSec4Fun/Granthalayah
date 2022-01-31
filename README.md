@@ -1,6 +1,9 @@
 # Granthalayah
    * Granthalayah  which means  library in English , This project is a library management system which keeps track's records from available books , rented books  , members and transactions of each members.
 
+
+[Click to explore blog, Yes me...!](https://granthalayah.herokuapp.com/) --- Deployed on Heroku         
+[  Or ME...!](http://granthalayah.pythonanywhere.com/) --- Deployed on pythonanywhere
 ## Features 
     - Keep track of all books 
     - Add books with one API call 
